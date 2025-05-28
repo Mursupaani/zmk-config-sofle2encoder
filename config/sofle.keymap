@@ -39,12 +39,12 @@
 
         backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <31 28>;
+            key-positions = <20 21>;
         };
 
         delete {
             bindings = <&kp DELETE>;
-            key-positions = <27 33>;
+            key-positions = <46 47>;
         };
 
         esc {
@@ -100,11 +100,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &kp F1            &kp F2             &kp F3                &kp F4                 &kp F5                             &kp F6     &kp F7        &kp F8        &kp F9        &kp F10        &kp F11
-&trans  &kp SLASH         &kp ASTERISK       &kp MINUS             &kp PLUS               &kp PERCENT                        &kp CARET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &kp F12
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION                    &kp EQUAL  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PIPE       &kp PIPE
-&trans  &kp HASH          &kp GRAVE          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN      &trans    &trans  &kp N0     &kp N7        &kp N8        &kp N9        &kp SLASH      &trans
-                          &trans             &trans                &trans                 &trans           &trans    &trans  &trans     &trans        &trans        &trans
+&trans  &kp F1            &kp F2             &kp F3                &kp F4                 &kp F5                         &kp F6           &kp F7        &kp F8        &kp F9        &kp F10        &kp F11
+&trans  &kp SLASH         &kp ASTERISK       &kp MINUS             &kp PLUS               &kp PERCENT                    &kp EXCLAMATION  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &kp F12
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN                    &kp EQUAL        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PIPE       &kp LCTRL
+&trans  &kp HASH          &kp GRAVE          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR   &trans    &trans  &kp RA(N5)       &kp N7        &kp N8        &kp N9        &kp SLASH      &trans
+                          &trans             &trans                &trans                 &trans       &trans    &trans  &trans           &kp NUMBER_0  &trans        &trans
             >;
 
             sensor-bindings =
@@ -123,11 +123,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &trans      &trans     &trans       &trans       &trans                      &trans     &trans         &trans      &trans        &trans     &trans
-&trans  &kp INS     &kp PSCRN  &kp K_CMENU  &trans       &trans                      &kp PG_UP  &kp N0         &kp CARET   &kp DOLLAR    &trans     &trans
-&trans  &kp LALT    &kp LCTRL  &kp LSHFT    &trans       &kp CLCK                    &kp PG_DN  &kp LEFT       &kp DOWN    &kp UP_ARROW  &kp RIGHT  &kp BSPC
-&trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY   &kp K_PASTE  &trans    &trans    &trans  &trans     &kp BACKSPACE  &kp DELETE  &trans        &trans     &trans
-                    &trans     &trans       &trans       &trans    &trans    &trans  &trans     &trans         &trans      &trans
+&trans  &trans      &trans     &trans       &trans       &trans                      &trans     &trans         &trans        &trans     &trans      &trans
+&trans  &kp INS     &kp PSCRN  &kp K_CMENU  &trans       &trans                      &kp PG_UP  &kp N0         &kp UP_ARROW  &kp CARET  &trans      &trans
+&trans  &kp LALT    &kp LCTRL  &kp LSHFT    &trans       &kp CLCK                    &kp PG_DN  &kp LEFT       &kp DOWN      &kp RIGHT  &kp DOLLAR  &kp BSPC
+&trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY   &kp K_PASTE  &trans    &trans    &trans  &trans     &kp BACKSPACE  &kp DELETE    &trans     &trans      &trans
+                    &trans     &trans       &trans       &trans    &trans    &trans  &trans     &trans         &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -143,11 +143,11 @@
 
             display-name = "System";
             bindings = <
-&bt BT_CLR_ALL     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &none  &none   &none   &none   &none   &none
-&ext_power EP_TOG  &none         &none         &none         &none         &studio_unlock                  &none  &none   &none   &none   &none   &none
-&none              &none         &none         &none         &none         &none                           &none  &tog 0  &tog 1  &tog 2  &tog 3  &none
-&none              &none         &none         &none         &none         &caps_word      &none    &none  &none  &none   &none   &none   &none   &none
-                                 &none         &none         &none         &none           &none    &none  &none  &none   &none   &none
+&bt BT_CLR_ALL     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &none  &none  &none  &none  &none  &none
+&ext_power EP_TOG  &none         &none         &none         &none         &studio_unlock                  &none  &none  &none  &none  &none  &none
+&none              &none         &none         &none         &none         &none                           &none  &to 0  &to 1  &to 2  &to 3  &none
+&none              &none         &none         &none         &none         &caps_word      &none    &none  &none  &none  &none  &none  &none  &none
+                                 &none         &none         &none         &none           &none    &none  &none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
