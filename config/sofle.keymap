@@ -39,12 +39,12 @@
 
         backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <31 32>;
+            key-positions = <32 32 33>;
         };
 
         delete {
             bindings = <&kp DELETE>;
-            key-positions = <32 33>;
+            key-positions = <20 21>;
         };
 
         esc {
