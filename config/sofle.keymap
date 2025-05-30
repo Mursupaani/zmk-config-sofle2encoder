@@ -113,6 +113,13 @@
 
             label = "OPEN_WEZTERM";
         };
+
+        address_bar: address_bar {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp K>;
+            label = "ADDRESS_BAR";
+        };
     };
 
     keymap {
@@ -129,11 +136,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&gresc        &kp C_BRI_DEC  &kp C_BRIGHTNESS_INC  &kp C_AL_TASK_MANAGER  &kp K_CONTEXT_MENU           &kp PRINTSCREEN                                                         &kp C_PREVIOUS  &kp C_PLAY_PAUSE         &kp C_NEXT    &kp C_POWER           &kp N0         &kp MINUS
-&kp TAB       &kp Q          &kp W                 &kp F                  &kp P                        &kp G                                                                   &kp J           &kp L                    &kp U         &kp Y                 &kp SEMICOLON  &kp EQUAL
-&caps_word    &kp A          &kp R                 &kp S                  &kp T                        &kp D                                                                   &kp H           &kp N                    &kp E         &kp I                 &kp O          &kp SQT
-&kp LEFT_ALT  &kp Z          &kp X                 &kp C                  &kp V                        &kp B            &kp C_MUTE                &kp C_PLAY_PAUSE             &kp K           &kp M                    &kp COMMA     &kp DOT               &kp FSLH       &kp LEFT_ALT
-                             &kp LS(LEFT_CONTROL)  &kp LEFT_GUI           &mt LEFT_CONTROL UNDERSCORE  &lt 1 SPACE      &mt LEFT_SHIFT AT_SIGN    &mt RIGHT_SHIFT EXCLAMATION  &lt 2 ENTER     &mt RIGHT_CONTROL MINUS  &kp LEFT_GUI  &kp LS(LEFT_CONTROL)
+&gresc        &kp C_BRI_DEC  &kp C_BRIGHTNESS_INC  &address_bar  &kp K_CONTEXT_MENU           &kp PRINTSCREEN                                                         &kp C_PREVIOUS  &kp C_PLAY_PAUSE         &kp C_NEXT    &kp C_POWER           &kp MINUS      &kp EQUAL
+&kp TAB       &kp Q          &kp W                 &kp F         &kp P                        &kp G                                                                   &kp J           &kp L                    &kp U         &kp Y                 &kp SEMICOLON  &kp BACKSLASH
+&caps_word    &kp A          &kp R                 &kp S         &kp T                        &kp D                                                                   &kp H           &kp N                    &kp E         &kp I                 &kp O          &kp SQT
+&kp LEFT_ALT  &kp Z          &kp X                 &kp C         &kp V                        &kp B            &kp C_MUTE                &kp C_PLAY_PAUSE             &kp K           &kp M                    &kp COMMA     &kp DOT               &kp FSLH       &kp LEFT_ALT
+                             &kp LS(LEFT_CONTROL)  &kp LEFT_GUI  &mt LEFT_CONTROL UNDERSCORE  &lt 1 SPACE      &mt LEFT_SHIFT AT_SIGN    &mt RIGHT_SHIFT EXCLAMATION  &lt 2 ENTER     &mt RIGHT_CONTROL MINUS  &kp LEFT_GUI  &kp LS(LEFT_CONTROL)
             >;
 
             sensor-bindings =
@@ -198,11 +205,11 @@
 
             display-name = "System";
             bindings = <
-&bt BT_CLR_ALL     &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &none  &none              &none           &none            &none   &none
-&ext_power EP_TOG  &none         &open_wezterm  &none         &none         &studio_unlock                  &none  &kp K_SCREENSAVER  &mmv MOVE_UP    &kp K_COFFEE     &none   &none
-&none              &none         &none          &none         &none         &none                           &none  &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &none
-&none              &none         &none          &none         &none         &caps_word      &none    &none  &none  &mkp LCLK          &mkp MCLK       &mkp RCLK        &none   &none
-                                 &none          &none         &none         &none           &none    &none  &none  &none              &none           &none
+&bt BT_CLR_ALL     &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &none  &none           &none           &none             &none   &none
+&ext_power EP_TOG  &none         &open_wezterm  &none         &none         &studio_unlock                  &none  &kp C_AC_HOME   &mmv MOVE_UP    &kp C_MEDIA_HOME  &none   &none
+&none              &none         &none          &none         &none         &none                           &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &trans  &none
+&none              &none         &none          &none         &none         &caps_word      &none    &none  &none  &mkp LCLK       &mkp MCLK       &mkp RCLK         &none   &none
+                                 &none          &none         &none         &none           &none    &none  &none  &none           &none           &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
