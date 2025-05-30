@@ -55,12 +55,12 @@
 
         toggle_symbols {
             bindings = <&tog 1>;
-            key-positions = <4 3>;
+            key-positions = <28 27 26>;
         };
 
         toggle_nav {
             bindings = <&tog 2>;
-            key-positions = <7 8>;
+            key-positions = <31 32 33>;
         };
     };
 
