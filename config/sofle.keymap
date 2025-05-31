@@ -83,12 +83,12 @@
             tapping-term-ms = <0>;
         };
 
-        Mouse_scroll: Mouse_scroll {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            label = "MOUSE_SCROLL";
-            #sensor-binding-cells = <2>;
-            bindings = <&msc>, <&msc>;
-        };
+        //Mouse_scroll: Mouse_scroll {
+        //    compatible = "zmk,behavior-sensor-rotate-var";
+        //    label = "MOUSE_SCROLL";
+        //    #sensor-binding-cells = <2>;
+        //    bindings = <&msc>, <&msc>;
+        //};
 
         key_tap_hold_layer_toggle: key_tap_hold_layer_toggle {
             compatible = "zmk,behavior-hold-tap";
