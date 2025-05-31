@@ -115,6 +115,34 @@
 
             label = "OPEN_WEZTERM";
         };
+
+        mouse_up_left: mouse_up_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_LEFT &mmv MOVE_UP>;
+            label = "MOUSE_UP_LEFT";
+        };
+
+        mouse_up_right: mouse_up_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_RIGHT &mmv MOVE_UP>;
+            label = "MOUSE_UP_RIGHT";
+        };
+
+        mouse_down_left: mouse_down_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_LEFT &mmv MOVE_DOWN>;
+            label = "MOUSE_DOWN_LEFT";
+        };
+
+        mouse_down_right: mouse_down_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_RIGHT &mmv MOVE_DOWN>;
+            label = "MOUSE_DOWN_RIGHT";
+        };
     };
 
     keymap {
@@ -200,11 +228,11 @@
 
             display-name = "System";
             bindings = <
-&bt BT_CLR_ALL     &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none  &none           &none           &none            &none   &none
-&ext_power EP_TOG  &none         &open_wezterm  &none         &none         &none                         &none  &mmv MOVE_UP    &mmv MOVE_UP    &mmv MOVE_UP     &none   &none
-&none              &none         &mkp RCLK      &mkp MCLK     &mkp LCLK     &none                         &none  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &none
-&none              &none         &none          &none         &none         &caps_word    &none    &none  &none  &mmv MOVE_DOWN  &mmv MOVE_DOWN  &mmv MOVE_DOWN   &none   &none
-                                 &none          &none         &none         &none         &none    &none  &none  &none           &none           &none
+&bt BT_CLR_ALL     &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none  &none             &none           &none              &none   &none
+&ext_power EP_TOG  &none         &open_wezterm  &none         &none         &none                         &none  &mouse_up_left    &mmv MOVE_UP    &mouse_up_right    &none   &none
+&none              &none         &mkp RCLK      &mkp MCLK     &mkp LCLK     &none                         &none  &mmv MOVE_LEFT    &mkp LCLK       &mmv MOVE_RIGHT    &trans  &none
+&none              &none         &none          &none         &none         &caps_word    &none    &none  &none  &mouse_down_left  &mmv MOVE_DOWN  &mouse_down_right  &none   &none
+                                 &none          &none         &none         &none         &none    &none  &none  &none             &none           &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
