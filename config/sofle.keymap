@@ -64,21 +64,18 @@
         };
 
         toggle_symbols {
-            bindings = <&tog 3>;
+            bindings = <&tog 2>;
             key-positions = <28 27 26>;
-            layers = <2>;
         };
 
         toggle_nav {
             bindings = <&tog 3>;
             key-positions = <31 32 33>;
-            layers = <3>;
         };
 
         toggle_finnish {
-            bindings = <&tog 2>;
+            bindings = <&tog 1>;
             key-positions = <36 49>;
-            layers = <1>;
         };
     };
 
@@ -182,7 +179,7 @@
                 <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
-        lower_layer {
+        symbol_layer {
             display-name = "Symbols";
 
             // TODO: Some binds are waiting for shifted keycode support.
@@ -206,7 +203,7 @@
                 <&ms_scrl_encoder>;
         };
 
-        raise_layer {
+        nav_layer {
             display-name = "Nav";
 
             // ------------------------------------------------------------------------------------------------------------
@@ -229,7 +226,7 @@
                 <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
-        adjust_layer {
+        system_layer {
             // ----------------------------------------------------------------------------------------------------------------------------
             // | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                  |      |      |       |      |       |       |
             // | EXTPWR | RGB_HUD | RGB_HUI | RGB_SAD | RGB_SAI | RGB_EFF |                  |      |      |       |      |       |       |
