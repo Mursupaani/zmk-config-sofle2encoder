@@ -110,9 +110,9 @@
             quick-tap-ms = <200>;
         };
 
-        mouse_scroll: mouse_scroll {
+        ms_scrl_encoder: ms_scrl_encoder {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "MOUSE_SCROLL";
+            label = "MS_SCRL_ENCODER";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
         };
