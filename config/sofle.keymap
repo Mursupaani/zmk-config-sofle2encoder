@@ -21,6 +21,13 @@
 
 &right_encoder { steps = <60>; };
 
+&mmv {
+    x-input-code = <INPUT_REL_X>;
+    y-input-code = <INPUT_REL_Y>;
+    time-to-max-speed-ms = <0>;
+    acceleration-exponent = <1>;
+};
+
 #define BASE 0
 #define LOWER 1
 #define RAISE 2
