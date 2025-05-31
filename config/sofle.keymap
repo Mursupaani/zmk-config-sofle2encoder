@@ -111,10 +111,17 @@
         };
 
         mouse_scroll: mouse_scroll {
-            compatible = "zmk,behavior-sensor-rotate-var";
+            compatible = "zmk,behavior-sensor-rotate";
             label = "MOUSE_SCROLL";
-            #sensor-binding-cells = <2>;
-            bindings = <&msc>, <&msc>;
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+        };
+
+        test_behavior: test_behavior {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "TEST_BEHAVIOR";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp PAGE_DOWN>, <&kp PAGE_UP>;
         };
     };
 
@@ -178,7 +185,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>,
-                <&mouse_scroll SCRL_DOWN SCRL_UP>;
+                <&mouse_scroll>;
         };
 
         raise_layer {
@@ -201,7 +208,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp LC(PLUS) LC(MINUS)>,
-                <&inc_dec_kp C_MENU_INCREASE C_MENU_DEC>;
+                <&test_behavior>;
         };
 
         adjust_layer {
