@@ -66,16 +66,19 @@
         toggle_symbols {
             bindings = <&tog 3>;
             key-positions = <28 27 26>;
+            layers = <2>;
         };
 
         toggle_nav {
             bindings = <&tog 3>;
             key-positions = <31 32 33>;
+            layers = <3>;
         };
 
         toggle_finnish {
             bindings = <&tog 2>;
             key-positions = <36 49>;
+            layers = <1>;
         };
     };
 
