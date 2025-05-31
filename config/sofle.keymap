@@ -140,7 +140,7 @@
         mouse_down_right: mouse_down_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mmv MOVE_RIGHT &mmv MOVE_DOWN>;
+            bindings = <&mmv ZMK_POINTING_DEFAULT_MOVE_VAL &mmv ZMK_POINTING_DEFAULT_MOVE_VAL>;
             label = "MOUSE_DOWN_RIGHT";
         };
     };
