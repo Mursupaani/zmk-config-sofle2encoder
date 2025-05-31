@@ -161,8 +161,8 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>,
-                <&inc_dec_kp A B>;
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>,
+                <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
         };
 
         raise_layer {
@@ -185,7 +185,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp LC(PLUS) LC(MINUS)>,
-                <&inc_dec_kp B B>;
+                <&inc_dec_kp C_MENU_INCREASE C_MENU_DEC>;
         };
 
         adjust_layer {
