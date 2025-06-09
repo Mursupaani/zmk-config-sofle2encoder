@@ -127,10 +127,11 @@
         cword_caps: cword_caps {
             compatible = "zmk,behavior-hold-tap";
             label = "CWORD_CAPS";
-            bindings = <&kp>, <&caps_word>;
+            bindings = <&kp>, <&caps>;
 
             #binding-cells = <2>;
             tapping-term-ms = <0>;
+            flavor = "tap-preferred";
         };
     };
 
