@@ -82,6 +82,11 @@
             bindings = <&kp DELETE>;
             key-positions = <38 39>;
         };
+
+        capslock {
+            bindings = <&kp CAPS>;
+            key-positions = <54 55>;
+        };
     };
 
     behaviors {
