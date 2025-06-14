@@ -5,8 +5,8 @@
  */
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1100  // 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
-#define ZMK_MOUSE_SCRL_VAL 140
+//#define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
+//#define ZMK_MOUSE_SCRL_VAL 140
 
 #include "keys_us_international.h"
 #include <behaviors.dtsi>
@@ -112,7 +112,7 @@
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            tap-ms = <500>;
+            tap-ms = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
     };
 
