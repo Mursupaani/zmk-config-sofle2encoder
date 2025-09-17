@@ -128,11 +128,6 @@
             key-positions = <36 49>;
         };
 
-        delete_left {
-            bindings = <&kp DELETE>;
-            key-positions = <38 39>;
-        };
-
         capslock {
             bindings = <&kp CAPS>;
             key-positions = <54 55>;
