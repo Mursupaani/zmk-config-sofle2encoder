@@ -110,7 +110,7 @@
 
         delete_right {
             bindings = <&kp DELETE>;
-            key-positions = <46 47>;
+            key-positions = <59 55>;
         };
 
         toggle_symbols {
@@ -128,11 +128,6 @@
             key-positions = <36 49>;
         };
 
-        backspace_left {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <15 14>;
-        };
-
         delete_left {
             bindings = <&kp DELETE>;
             key-positions = <38 39>;
@@ -141,6 +136,11 @@
         capslock {
             bindings = <&kp CAPS>;
             key-positions = <54 55>;
+        };
+
+        delete_left {
+            bindings = <&kp DELETE>;
+            key-positions = <54 50>;
         };
     };
 
