@@ -186,8 +186,15 @@
         vim_file_top: vim_file_top {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp G &kp G>;
+            bindings = <&kp EN_G &kp EN_G>;
             label = "VIM_FILE_TOP";
+        };
+
+        hive_below_header: hive_below_header {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EN_N1 &kp N3 &kp EN_G &kp EN_G>;
+            label = "HIVE_BELOW_HEADER";
         };
     };
 
@@ -285,11 +292,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &trans     &trans        &trans        &trans         &trans                    &trans  &trans       &trans      &trans      &trans     &trans
-&trans  &trans     &trans        &trans        &trans         &trans                    &trans  &kp N0       &kp CARET   &kp DOLLAR  &trans     &trans
-&trans  &kp LS(G)  &kp LC(EN_D)  &kp LC(EN_U)  &vim_file_top  &trans                    &trans  &kp LEFT     &kp DOWN    &kp UP      &kp RIGHT  &trans
-&trans  &trans     &trans        &trans        &trans         &trans  &trans    &trans  &trans  &kp K_PASTE  &kp K_COPY  &kp K_CUT   &trans     &trans
-                   &trans        &trans        &trans         &trans  &trans    &trans  &trans  &trans       &trans      &trans
+&trans  &trans     &trans        &trans        &trans              &trans                           &trans  &trans       &trans      &trans      &trans     &trans
+&trans  &trans     &trans        &trans        &trans              &trans                           &trans  &kp N0       &kp CARET   &kp DOLLAR  &trans     &trans
+&trans  &kp LS(G)  &kp LC(EN_D)  &kp LC(EN_U)  &hive_below_header  &vim_file_top                    &trans  &kp LEFT     &kp DOWN    &kp UP      &kp RIGHT  &trans
+&trans  &trans     &trans        &trans        &trans              &trans         &trans    &trans  &trans  &kp K_PASTE  &kp K_COPY  &kp K_CUT   &trans     &trans
+                   &trans        &trans        &trans              &trans         &trans    &trans  &trans  &trans       &trans      &trans
             >;
 
             sensor-bindings =
