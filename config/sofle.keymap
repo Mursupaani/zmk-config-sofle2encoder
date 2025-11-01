@@ -144,7 +144,7 @@
 
         toggle_game_1 {
             bindings = <&tog 7>;
-            key-positions = <5 41>;
+            key-positions = <0 36>;
         };
     };
 
@@ -367,7 +367,7 @@
 &kp NUBS        &kp SEMI      &kp EN_Y      &kp EN_U      &kp EN_L          &kp EN_J                                                &kp EN_J               &kp EN_L                 &kp EN_U      &kp EN_Y              &kp EN_SEMI  &kp EN_BSLH
 &kp LEFT_ALT    &kp EN_O      &kp EN_I      &kp EN_E      &kp EN_N          &kp EN_M                                                &kp EN_M               &kp EN_N                 &kp EN_E      &kp EN_I              &kp EN_O     &kp EN_SINGLE_QUOTE
 &kp LEFT_SHIFT  &kp FSLH      &kp DOT       &kp COMMA     &kp EN_H          &kp EN_K       &kp C_MUTE    &tog 1                     &kp EN_K               &kp EN_H                 &kp EN_COMMA  &kp EN_DOT            &kp EN_FSLH  &kp RIGHT_ALT
-                              &tog 7        &kp LEFT_GUI  &kp LEFT_CONTROL  &kp SPACE      &kp ENTER     &mt RIGHT_SHIFT BACKSPACE  &lt 4 ENTER            &mt RIGHT_CONTROL MINUS  &kp LEFT_GUI  &kp LS(LEFT_CONTROL)
+                              &tog 8        &kp LEFT_GUI  &kp LEFT_CONTROL  &kp SPACE      &kp ENTER     &mt RIGHT_SHIFT BACKSPACE  &lt 4 ENTER            &mt RIGHT_CONTROL MINUS  &kp LEFT_GUI  &kp LS(LEFT_CONTROL)
             >;
 
             sensor-bindings =
