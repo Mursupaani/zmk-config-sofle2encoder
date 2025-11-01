@@ -361,7 +361,7 @@
         };
 
         game_2 {
-            display-name = "Game 1";
+            display-name = "Game 2";
             bindings = <
 &kp ESC         &mt F6 EN_N6  &mt F7 EN_N7  &mt F8 EN_N8  &mt F9 EN_N9      &mt F10 EN_N0                                           &mt C_POWER C_AL_LOCK  &kp C_PREVIOUS           &kp C_PP      &kp C_NEXT            &kp MINUS    &kp EQUAL
 &kp NUBS        &kp SEMI      &kp EN_Y      &kp EN_U      &kp EN_L          &kp EN_J                                                &kp EN_J               &kp EN_L                 &kp EN_U      &kp EN_Y              &kp EN_SEMI  &kp EN_BSLH
