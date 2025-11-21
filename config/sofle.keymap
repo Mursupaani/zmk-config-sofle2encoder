@@ -113,12 +113,12 @@
         };
 
         toggle_symbols {
-            bindings = <&tog 5>;
+            bindings = <&tog 4>;
             key-positions = <14 15 16>;
         };
 
         toggle_nav {
-            bindings = <&tog 4>;
+            bindings = <&tog 3>;
             key-positions = <19 20 21>;
         };
 
